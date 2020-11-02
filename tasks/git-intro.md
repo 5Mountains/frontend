@@ -15,21 +15,38 @@ Get familiar with Git and GitHub.
 
     ![youtube-CC-guide](../img/youtube-captions.png)
 
- 2. Finish [try.github.io](https://try.github.io/levels/1/challenges/1)
+ 1. Complete the following levels at [learngitbranching.js.org](https://learngitbranching.js.org/):
+    - Main: Introduction Sequence
+    - Remote: Push & Pull -- Git Remotes
 
- 3. Create repository named `kottans-frontend`.
+ 1. Create repository named `kottans-frontend`.
 
- 4. Create `README.md` for the repository.
+ 1. Create `README.md` for the repository.
 
- 5. Describe your impressions about learned materials.
+ 1. Describe your impressions about learned materials.
 
- 6. Send a pull-request to [Kottans/mock-repo][mock-repo] proposing a change.
-    It could be anything, really. If you have found a typo in README - great!
+ 1. Send a pull-request to [Kottans/mock-repo][mock-repo] proposing a change.
+ 
+    **How to make a pull-request**
+ 
+    * Fork this repo [Kottans/mock-repo][mock-repo]
+    * Clone your fork to your local machine: `git clone https://github.com/YOUR_USERNAME/mock-repo.git`
+    * Add this repository [Kottans/mock-repo][mock-repo] as an upstream: git remote add upstream `https://github.com/kottans/mock-repo.git`
+    * `git checkout master` and then create new branch, naming is up to you (aka feature branch): `git checkout -b BRANCH_NAME`.
+    * Make some changes to your local repository. It could be anything, really. If you have found a typo in README - great!
     Take care to give your PR a meaningful name and description.
+    * Сommit your changes to newly created feature branch
+    * Сheckout master branch: `git checkout master`
+    * Pull latest changes from upstream master branch: `git pull upstream master`
+    * Merge master branch into your feature branch: `git checkout BRANCH_NAME && git merge master`
+    * Resolve any merge conflicts if there are any
+    * Push feature branch to your remote repository: `git push --set-upstream origin BRANCH_NAME`
+    * Make pull-request from your repository to this repository via GitHub web-interface
+    * If you are asked to fix a merge conflict refer to the extra materials for the related information
 
     **Please note, that your PR may not be reviewed quickly.**
 
- 7. Study Extra Materials below to improve your skills.
+ 1. Study Extra Materials below to improve your skills.
     If you feel it affects your overall course performance consider
     reverting to those later e.g. when you have all mandatory tasks completed.
 
@@ -41,7 +58,9 @@ When you finish this task you can start the next one.
 
 * [Git tips](http://sixrevisions.com/web-development/git-tips/) — consolidate your knowledge of Git
 
-* [Learn git branching](http://learngitbranching.js.org) — improve your understanding of branching
+* [About Merge Conflicts](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-merge-conflicts)
+
+* [Resoilving a Merge Conflict](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line)
 
 * [Communicating using Markdown](https://lab.github.com/githubtraining/communicating-using-markdown)
 
